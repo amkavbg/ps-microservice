@@ -1,0 +1,15 @@
+{
+  "http.port": 35000,
+  "printers": [
+    {
+      "name": "Printer 1",
+      "location": "Бухгалтерия",
+      "ip": "192.168.1.10"
+    },
+    {
+      "name": "Printer 2",
+      "location": "Директор",
+      "ip": "192.168.1.20"
+    }
+  ]
+}
