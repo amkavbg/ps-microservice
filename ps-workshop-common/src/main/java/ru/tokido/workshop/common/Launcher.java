@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * Created by tokido on 4/13/17.
+ * @author tokido
  */
 public class Launcher extends io.vertx.core.Launcher {
 
@@ -44,7 +44,7 @@ public class Launcher extends io.vertx.core.Launcher {
                 try {
                     conf = new JsonObject(sconf);
                 } catch (DecodeException e) {
-                    System.err.println("Configuration file "+sconf+" does not contain a valid JSON object");
+                    System.err.println("Configuration file "+ sconf +" does not contain a valid JSON object");
                 }
             } catch (FileNotFoundException e) {
                //   Ignore it.

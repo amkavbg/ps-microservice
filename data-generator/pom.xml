@@ -7,8 +7,8 @@
 
     <parent>
         <!-- The parent to inherit the default dependencies and plugin configuration -->
-        <artifactId>ps-microservice-workshop</artifactId>
         <groupId>ru.tokido.workshop</groupId>
+        <artifactId>ps-microservice-workshop</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
