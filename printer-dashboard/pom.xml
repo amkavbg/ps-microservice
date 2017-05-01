@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>ps-microservice-workshop</artifactId>
         <groupId>ru.tokido.workshop</groupId>
@@ -10,6 +11,33 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>printer-dashboard</artifactId>
+    <name>Front Panel</name>
 
+    <properties>
+        <!-- Main verticle -->
+        <main.verticle>ru.tokido.workshop.dashboard.DashboardVerticle</main.verticle>
+    </properties>
+
+    <dependencies>
+        <!-- This dependency provide some classes useful for the workshop -->
+        <dependency>
+            <groupId>ru.tokido.workshop</groupId>
+            <artifactId>ps-workshop-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- plugin to create a `fat-jar` -->
+                <artifactId>maven-shade-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- copy the cluster configuration -->
+                <artifactId>maven-dependency-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -4,17 +4,20 @@
     {
       "name": "Printer 1",
       "location": "Бухгалтерия",
-      "ip": "192.168.1.10"
+      "ip": "192.168.1.10",
+      "status":"UP"
     },
     {
       "name": "Printer 2",
       "location": "Директор",
-      "ip": "192.168.1.20"
+      "ip": "192.168.1.20",
+      "status":"DOWN"
     },
     {
       "name": "Printer 3",
       "location": "Ресепешн",
-      "ip": "192.168.1.20"
+      "ip": "192.168.1.30",
+      "status":"DANGER"
     }
   ]
 }
